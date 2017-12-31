@@ -1,23 +1,20 @@
 apply plugin: 'com.android.library'
 
-dependencies {
-    compile 'com.android.support:support-v4:21.0.2'
-}
-
-// Version Information
-def versionMajor = 1
-def versionMinor = 2
-def versionPatch = 2
-def versionBuild = 5
-
 android {
-    compileSdkVersion 21
-    buildToolsVersion '21.1.1'
+    compileSdkVersion parent.ext.targetSdkVersion
+    buildToolsVersion parent.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 8
-        targetSdkVersion 21
-        versionCode versionBuild
-        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+        minSdkVersion parent.ext.minSdkVersion
+        targetSdkVersion parent.ext.targetSdkVersion
+        versionCode 1
+        versionName parent.ext.versionName
     }
 }
+
+dependencies {
+    implementation ('com.android.support:support-annotations:24.2.0')
+    implementation ('com.android.support:support-compat:24.2.0')
+}
+
+//apply from: rootProject.file('library/gradle-mvn-push.gradle')

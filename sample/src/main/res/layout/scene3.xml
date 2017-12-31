@@ -7,17 +7,16 @@
 
     <View
         android:id="@+id/transition_square"
-        android:layout_width="@dimen/square_size_normal"
-        android:layout_height="@dimen/square_size_normal"
+        android:layout_width="@dimen/square_size"
+        android:layout_height="@dimen/square_size"
         android:layout_centerHorizontal="true"
         android:background="#990000"
         android:gravity="center"/>
 
     <ImageView
         android:id="@+id/transition_image"
-        android:layout_width="150dp"
-        android:layout_height="100dp"
-        android:scaleType="fitXY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:src="@drawable/ic_launcher"/>
 
