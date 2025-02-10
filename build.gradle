@@ -4,15 +4,15 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.4.1'
     }
 
     project.ext {
-        buildToolsVersion = "26.0.2"
-        minSdkVersion = 9
-        targetSdkVersion = 26
+        buildToolsVersion = "28.0.3"
+        minSdkVersion = 14
+        targetSdkVersion = 29
 
-        versionName = "1.8.0"
+        versionName = "2.1.0"
     }
 }
 
